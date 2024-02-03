@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
 	<script src="https://cdn.tailwindcss.com"></script>
 	<script>
     tailwind.config = {
@@ -51,6 +52,23 @@
 		</div>
 		<!-- Button -->
 		<a href="#" class="hidden md:block p-2 px-4 text-white bg-brightRed rounded-full baseline hover:bg-brightRedLight">Get Started</a>
+		<!-- Hamburger Icon -->
+		<button id="hamburger-btn" class="block hamburger focus:outline-none md:hidden">
+			<span class="hamburger-top"></span>
+			<span class="hamburger-mid"></span>
+			<span class="hamburger-bot"></span>
+		</button>
+	</div>
+
+	<!-- Hamburger Menu -->
+	<div class="md:hidden">
+		<div id="menu" class="absolute flex flex-col bg-white py-6 mt-4 space-y-4 left-6 right-6 drop-shadow-md items-center hidden">
+			<a href="#" class="hover:text-darkGrayishBlue">Pricing</a>
+			<a href="#" class="hover:text-darkGrayishBlue">Product</a>
+			<a href="#" class="hover:text-darkGrayishBlue">About Us</a>
+			<a href="#" class="hover:text-darkGrayishBlue">Careers</a>
+			<a href="#" class="hover:text-darkGrayishBlue">Community</a>
+		</div>
 	</div>
 </nav>
 
@@ -195,7 +213,7 @@
 
 <!-- FOOTER -->
 <footer class="bg-veryDarkBlue">
-	<div class="container flex flex-col-reverse justify-between space-y-10 mx-auto px-6 py-0 md:py-10 text-white md:flex-row">
+	<div class="container flex flex-col-reverse justify-between space-y-10 md:space-x-4  mx-auto px-6 py-0 md:py-10 text-white md:flex-row">
 		<!-- Logo -->
 		<p class="block text-center mt-10 mb-4 md:hidden">Copyright 2020 All rights reserved</p>
 		<div class="flex px-6 md:px-0 md:flex-col flex-col-reverse md:justify-between">
@@ -233,6 +251,6 @@
 	</div>
 </footer>
 
-
+<script src="script.js"></script>
 </body>
 </html>
