@@ -56,3 +56,11 @@ body {
 .open .hamburger-bot {
 	transform: rotate(-45deg) translateY(6px) translate(-6px);
 }
+
+#dark-toggle:checked ~ label div.toggle-circle {
+	transform: translateX(16px);
+}
+
+#dark-toggle:checked ~ label div.toggle-container {
+	background-color: blue;
+}
